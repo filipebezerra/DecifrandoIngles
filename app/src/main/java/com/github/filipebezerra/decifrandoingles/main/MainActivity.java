@@ -11,8 +11,6 @@ import android.content.*;
 import com.github.filipebezerra.decifrandoingles.recyclerview.*;
 
 public class MainActivity extends AppCompatActivity implements ArticleAdapter.ClickListener {
-	
-	private RecyclerView mRecyclerView;
 
 	private ArticleAdapter mAdapter;
 
@@ -25,13 +23,15 @@ public class MainActivity extends AppCompatActivity implements ArticleAdapter.Cl
 		loadViews();
 	}
 
+	@SuppressWarnings("ConstantConditions")
 	private void loadViews() {
-		mRecyclerView = (RecyclerView) findViewById(android.R.id.list);
-		mRecyclerView.setHasFixedSize(true);
-		mRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-		mRecyclerView.setAdapter(mAdapter = new ArticleAdapter(this));
-		mRecyclerView.addOnItemTouchListener(new ArticleAdapter.RecyclerTouchListener(this, mRecyclerView, this));
-		mRecyclerView.addItemDecoration(new DividerDecoration(this));
+		RecyclerView recyclerView = (RecyclerView) findViewById(android.R.id.list);
+		recyclerView.setHasFixedSize(true);
+		recyclerView.setLayoutManager(new LinearLayoutManager(this));
+		recyclerView.setAdapter(mAdapter = new ArticleAdapter(this));
+		recyclerView.addOnItemTouchListener(
+				new ArticleAdapter.RecyclerTouchListener(this, recyclerView, this));
+		recyclerView.addItemDecoration(new DividerDecoration(this));
 	}
 	
 	@Override
@@ -43,14 +43,14 @@ public class MainActivity extends AppCompatActivity implements ArticleAdapter.Cl
 
 	@Override
 	public void onLongClick(View view, int position) {
-		// TODO: Implement this method
 	}
 
 	@Override
 	protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 		if (requestCode == REQUEST_ARTICLE
 			&& resultCode == Activity.RESULT_OK) {
-				final int position = data.getExtras().getInt(ArticleActivity.EXTRA_POSITION_IN_LIST);
+				final int position = data.getExtras()
+						.getInt(ArticleActivity.EXTRA_POSITION_IN_LIST);
 				mAdapter.notifyItemChanged(position);
 		}
 		super.onActivityResult(requestCode, resultCode, data);

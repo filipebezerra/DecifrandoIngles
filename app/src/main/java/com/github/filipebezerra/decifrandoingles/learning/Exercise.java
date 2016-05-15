@@ -1,32 +1,28 @@
 package com.github.filipebezerra.decifrandoingles.learning;
 
 public class Exercise {
-	private String question;
-	
-	private String answer;
+    private String question;
 
-	public Exercise(String question, String answer) {
-		this.question = question;
-		this.answer = answer;
-	}
+    private String answer;
 
-	public void setQuestion(String question)
-	{
-		this.question = question;
-	}
+    public Exercise(String question, String answer) {
+        this.question = question;
+        this.answer = answer;
+    }
 
-	public String getQuestion()
-	{
-		return question;
-	}
+    public void setQuestion(String question) {
+        this.question = question;
+    }
 
-	public void setAnswer(String answer)
-	{
-		this.answer = answer;
-	}
+    public String getQuestion() {
+        return question;
+    }
 
-	public String getAnswer()
-	{
-		return answer;
-	}
+    public void setAnswer(String answer) {
+        this.answer = answer;
+    }
+
+    public String getAnswer() {
+        return answer;
+    }
 }

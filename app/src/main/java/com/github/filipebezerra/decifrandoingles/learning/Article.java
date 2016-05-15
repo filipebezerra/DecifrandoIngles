@@ -1,96 +1,88 @@
 package com.github.filipebezerra.decifrandoingles.learning;
 
-import com.github.filipebezerra.decifrandoingles.article.*;
-
 public class Article {
-	private String keyword;
-	
-	private String title;
-	
-	private int imageResource;
-	
-	private String content;
-	
-	private Exercise exercise;
-	
-	private boolean learnt;
-	
-	private long learntAt;
+    private String keyword;
 
-	public Article(String keywork, String title, int imageResource, String content, Exercise exercise) {
-		this.keyword = keywork;
-		this.title = title;
-		this.imageResource = imageResource;
-		this.content = content;
-		this.exercise = exercise;
-	}
+    private String title;
 
-	public void setLearntAt(long learntAt)
-	{
-		this.learntAt = learntAt;
-	}
+    private int imageResource;
 
-	public long getLearntAt()
-	{
-		return learntAt;
-	}
+    private String content;
 
-	public void setLearnt(boolean learnt)
-	{
-		this.learnt = learnt;
-	}
+    private Exercise exercise;
 
-	public boolean isLearnt()
-	{
-		return learnt;
-	}
+    private boolean learnt;
 
-	public void setKeyword(String keyword)
-	{
-		this.keyword = keyword;
-	}
+    private long learntAt;
 
-	public String getKeyword()
-	{
-		return keyword;
-	}
+    public Article(String keywork, String title, int imageResource, String content,
+            Exercise exercise) {
+        this.keyword = keywork;
+        this.title = title;
+        this.imageResource = imageResource;
+        this.content = content;
+        this.exercise = exercise;
+    }
 
-	public void setTitle(String title) {
-		this.title = title;
-	}
+    public void setLearntAt(long learntAt) {
+        this.learntAt = learntAt;
+    }
 
-	public String getTitle() {
-		return title;
-	}
+    public long getLearntAt() {
+        return learntAt;
+    }
 
-	public void setImageResource(int imageResource) {
-		this.imageResource = imageResource;
-	}
+    public void setLearnt(boolean learnt) {
+        this.learnt = learnt;
+    }
 
-	public int getImageResource() {
-		return imageResource;
-	}
+    public boolean isLearnt() {
+        return learnt;
+    }
 
-	public void setContent(String content) {
-		this.content = content;
-	}
+    public void setKeyword(String keyword) {
+        this.keyword = keyword;
+    }
 
-	public String getContent() {
-		return content;
-	}
-	
-	public void setExercise(Exercise exercise) {
-		this.exercise = exercise;
-	}
+    public String getKeyword() {
+        return keyword;
+    }
 
-	public Exercise getExercise() {
-		return exercise;
-	}
-	
-	@Override
-	public boolean equals(Object o) {
-		return o != null && o instanceof Article
-			&& this.getTitle().equals(((Article)o).getTitle());
-	}
-	
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+
+    public void setImageResource(int imageResource) {
+        this.imageResource = imageResource;
+    }
+
+    public int getImageResource() {
+        return imageResource;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setExercise(Exercise exercise) {
+        this.exercise = exercise;
+    }
+
+    public Exercise getExercise() {
+        return exercise;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        return o != null && o instanceof Article
+                && this.getTitle().equals(((Article) o).getTitle());
+    }
 }

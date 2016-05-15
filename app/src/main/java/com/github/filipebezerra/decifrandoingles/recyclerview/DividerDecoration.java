@@ -1,11 +1,13 @@
 package com.github.filipebezerra.decifrandoingles.recyclerview;
-import android.content.*;
-import android.content.res.*;
-import android.graphics.*;
-import android.graphics.drawable.*;
-import android.support.v7.widget.*;
-import android.view.*;
-import com.github.filipebezerra.decifrandoingles.*;
+
+import android.content.Context;
+import android.content.res.TypedArray;
+import android.graphics.Canvas;
+import android.graphics.Rect;
+import android.graphics.drawable.Drawable;
+import android.support.v7.widget.RecyclerView;
+import android.view.View;
+import com.github.filipebezerra.decifrandoingles.R;
 
 public class DividerDecoration extends RecyclerView.ItemDecoration {
 
@@ -36,7 +38,7 @@ public class DividerDecoration extends RecyclerView.ItemDecoration {
         for (int i = 0; i < childCount; i++) {
             final View child = parent.getChildAt(i);
             final RecyclerView.LayoutParams params = (RecyclerView.LayoutParams) child
-				.getLayoutParams();
+                    .getLayoutParams();
             final int top = child.getBottom() + params.bottomMargin + mInsets;
             final int bottom = top + mDivider.getIntrinsicHeight();
             mDivider.setBounds(left, top, right, bottom);
@@ -45,7 +47,8 @@ public class DividerDecoration extends RecyclerView.ItemDecoration {
     }
 
     @Override
-    public void getItemOffsets(Rect outRect, View view, RecyclerView parent, RecyclerView.State state) {
+    public void getItemOffsets(Rect outRect, View view, RecyclerView parent,
+            RecyclerView.State state) {
         //We can supply forced insets for each item view here in the Rect
         outRect.set(mInsets, mInsets, mInsets, mInsets);
     }
