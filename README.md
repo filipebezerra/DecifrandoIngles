@@ -9,6 +9,12 @@ Este app é projeto final do evento [Android Study Jam Goiânia](https://plus.go
 
 Desta forma as pessoas aprendem as regras e o correto usar das palavras e por meio de um exercício, fixam o conhecimento adquirido.
 
+## Experimente online
+<a href="https://appetize.io/app/6mmt1yp6v49329hq2m47uh4eyc?device=nexus5&scale=75&orientation=portrait&osVersion=6.0&autoplay=true" target="_blank"><img src="https://raw.githubusercontent.com/filipebezerra/VerseOfTheDay/master/art/Live/Appetize-Nexus5.PNG" heigth="320" width="163"></a>
+
+## Faça o download
+<a href='https://play.google.com/store/apps/details?id=com.github.filipebezerra.decifrandoingles&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Disponível no Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/pt-br_badge_web_generic.png' heigth="480" width="272"/></a>
+
 ## Como funciona
 
 No app os artigos são apresentados numa lista com 12 itens falando sobre diversas comparações. Ao escolher um artigo a pessoa é direcionada para a explicação do artigo, que contém texto formatado para que a pessoa consiga se situar e melhor compreender o que está sendo explicado.
@@ -24,3 +30,6 @@ Se a pessoa acertar, uma mensagem parabenizando será apresentada e na lista dos
 ## Objetivo
 
 De forma simples e objetiva apresentar palavras do vocabulário inglês que contém outras semelhantes e usadas em mesmas situações, mas que também exigem algumas regras para serem usadas. E por meio do exercício de fixação a pessoa poderá <b>levará o conhecimento adquirido da memória de curto prazo para a memória permanente</b>.
+
+## Criado e desenvolvido por
+* Filipe Bezerra - http://filipebezerra.github.io - filipebzerra@gmail.com
