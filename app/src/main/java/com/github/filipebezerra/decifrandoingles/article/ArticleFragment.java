@@ -82,7 +82,7 @@ public class ArticleFragment extends Fragment {
         mArticleContentView.setText(Html.fromHtml(mArticle.getContent()));
 
         if (mArticle.isLearnt()) {
-            mLearntButton.setText("Quero exercitar mais");
+            mLearntButton.setText(R.string.button_lets_exercise_more);
         }
     }
 

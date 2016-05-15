@@ -46,7 +46,8 @@ public class ArticleAdapter extends RecyclerView.Adapter<ArticleAdapter.ViewHold
             String timeText = DateUtils.getRelativeTimeSpanString(article.getLearntAt(),
                     System.currentTimeMillis(), DateUtils.SECOND_IN_MILLIS).toString();
 
-            holder.learntAt.setText("Aprendido à " + timeText);
+            holder.learntAt.setText(
+                    mContext.getString(R.string.text_lesson_already_learnt, timeText));
             holder.learntAt.setVisibility(View.VISIBLE);
         }
     }
