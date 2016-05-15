@@ -1,15 +1,23 @@
 package com.github.filipebezerra.decifrandoingles.article;
-import android.os.*;
-import android.support.v4.app.*;
-import android.text.*;
-import android.view.*;
-import android.widget.*;
-import com.github.filipebezerra.decifrandoingles.*;
-import android.support.design.widget.*;
-import android.widget.TextView.*;
-import com.afollestad.materialdialogs.MaterialDialog;
+
+import android.os.Bundle;
+import android.support.design.widget.TextInputLayout;
+import android.support.v4.app.Fragment;
+import android.text.Html;
+import android.text.TextUtils;
+import android.view.KeyEvent;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.TextView.OnEditorActionListener;
 import com.afollestad.materialdialogs.DialogAction;
-import com.github.filipebezerra.decifrandoingles.learning.*;
+import com.afollestad.materialdialogs.MaterialDialog;
+import com.github.filipebezerra.decifrandoingles.R;
+import com.github.filipebezerra.decifrandoingles.learning.Article;
+import com.github.filipebezerra.decifrandoingles.learning.ArticleRepository;
 
 public class ExerciseFragment extends Fragment {
 
@@ -73,7 +81,7 @@ public class ExerciseFragment extends Fragment {
 				}
 		});
 		mSubmitButton = (Button)fragmentView.findViewById(R.id.buttonSubmit);
-		mSubmitButton.setOnClickListener(new OnClickListener(){
+		mSubmitButton.setOnClickListener(new View.OnClickListener(){
 				@Override
 				public void onClick(View v) {
 					doCheckAnswer();
