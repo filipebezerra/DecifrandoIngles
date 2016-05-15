@@ -13,7 +13,7 @@ Desta forma as pessoas aprendem as regras e o correto usar das palavras e por me
 <a href="https://appetize.io/app/6mmt1yp6v49329hq2m47uh4eyc?device=nexus5&scale=75&orientation=portrait&osVersion=6.0&autoplay=true" target="_blank"><img src="https://raw.githubusercontent.com/filipebezerra/VerseOfTheDay/master/art/Live/Appetize-Nexus5.PNG" heigth="320" width="163"></a>
 
 ## Faça o download
-<a href='https://play.google.com/store/apps/details?id=com.github.filipebezerra.decifrandoingles&utm_source=global_co&utm_medium=prtnr&utm_content=Mar2515&utm_campaign=PartBadge&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1'><img alt='Disponível no Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/pt-br_badge_web_generic.png' heigth="480" width="272"/></a>
+<a href='https://play.google.com/apps/testing/com.github.filipebezerra.decifrandoingles'><img alt='Disponível no Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/pt-br_badge_web_generic.png' heigth="480" width="272"/></a>
 
 ## Como funciona
 
