@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="articles_keywords">
+		<item>
+			singular_plural
+		</item>
+		<item>
+			what_which
+		</item>
+		<item>
+			teacher_professor_student_pupil
+		</item>
+		<item>
+			jog_run
+		</item>
+		<item>
+			glad_happy_pleased
+		</item>
+		<item>
+			think_of_think_about
+		</item>
+		<item>
+			good_fine_well
+		</item>
+		<item>
+			very_too_so
+		</item>
+		<item>
+			house_home
+		</item>
+		<item>
+			close_near
+		</item>
+		<item>
+			bathroom_restroom
+		</item>
+		<item>
+			as_like
+		</item>
+	</string-array>
+
+	<string-array name="articles_titles">
+		<item>
+			Como formar o singular e o plural em inglês
+		</item>
+		<item>
+			What x Which
+		</item>
+		<item>
+			Teacher x Professor / Student x Pupil
+		</item>
+		<item>
+			Jog x Run
+		</item>
+		<item>
+			Glad x Happy x Pleased
+		</item>
+		<item>
+			Think of x Think about
+		</item>
+		<item>
+			Good x Fine x Well
+		</item>
+		<item>
+			Very X Too X So
+		</item>
+		<item>
+			House X Home
+		</item>
+		<item>
+			Close X Near
+		</item>
+		<item>
+			Bathroom x Restroom
+		</item>
+		<item>
+			As x Like
+		</item>
+	</string-array>
+	
+	<string-array name="articles_contents">
+		<item>
+			<![CDATA[
+			<b>Para formar o plural da maior parte dos substantivos em inglês, basta adicionar um –s:</b>
+			<br />
+			Snake = snakes
+			<br />
+			Barrymore = Barrymores
+			<br />
+			<br />
+			<b>Palavras com final em –ch, -x, -s ou som de –s levam –es no final.</b>
+			<br />
+			Kiss = kisses
+			<br />
+			Jones = Joneses
+			<br />
+			<br />
+			<b>Para palavras que terminam em consoantes + -y, retira-se o –y e acrescenta-se –i + -es (exceto nomes próprios)</b>
+			<br />
+			Baby = babies
+			<br />
+			Kennedy = Kennedys
+			<br />
+			<br />
+			<b>Palavras com fim em –o criam um problema específico:</b>
+			<br />
+			Potato = potatoes
+			<br />
+			Stereo = stereos
+			<br />
+			<br />
+			<b>Palavras com fim em –f mudam para –v + -es</b>
+			<br />
+			Knife = knives
+			<br />
+			Há exceções: roof = roofs
+			<br />
+			<br />
+			<b>Há plurais irregulares:</b>
+			<br />
+			child = children
+			<br />
+			woman = women
+			<br />
+			man = men
+			<br />
+			person = people
+			<br />
+			<br />
+			<b>Palavras derivadas do Latim mantêm o plural original e requerem maior atenção:</b>
+			<br />
+			syllabus = syllabi
+			<br />
+			thesis = theses
+			<br />
+			crisis = crises
+			<br />
+			phenomenon = phenomena
+			<br />
+			index = indices
+			<br />
+			appendix = appendices
+			<br />
+			criterion = criteria
+			<br />
+			<br />
+			<b>Alguns nomes aparecem no plural, mas levam o verbo no singular:</b>
+			<br />
+			The news is bad.
+			<br />
+			Gymnastics is fun to watch.
+			<br />
+			<br />
+			<b>Alguns nomes parecem ser formados no singular, mas serão usados no plural:</b>
+			<br />
+			My pants are torn.
+			<br />
+			Her scissors / glasses were stolen.
+			<br />
+			<br />
+			<b>Expressões numéricas e substantivos coletivos aparecem geralmente no singular:</b>
+			<br />
+			Fifty thousand dollars is a lot of money.
+			<br />
+			A dozen is probably not enough. (eggs)
+			<br />
+			The jury delivers its verdict.
+			<br />
+			<br />
+			<b>Expressões numéricas e substantivos coletivos podem aparecer no plural se os indivíduos do grupo agirem individualmente:</b>
+			<br />
+			Fifty percert of the students have voted already.
+			<br />
+			A dozen are coming over this afternoon. (people)
+			<br />
+			The jury came in and took their sits.
+			<br />
+			<br />
+			<b>Nomes próprios e títulos ficam no singular.</b>
+			<br />
+			Postcards is my favorite novel.
+			<br />
+			Faces is the name of the new restaurant downtown.
+			<br />
+			<br />
+			<b>Nas palavras compostas, a regra geral é colocar no plural o elemento que pode ser pluralizado.</b>
+			<br />
+			Daughters-in-law.
+			<br />
+			<br />
+			<b>Nomes da banda dependem da forma de seus nomes:</b>
+			<br />
+			The Mamas and the Papas were one of the best groups of the 70’s.
+			<br />
+			Metallica is my favorite band.
+			<br />
+			<br />
+			<b>“The number” é singular.</b>
+			<br />
+			The number of applicants is steadily increasing.
+			<br />
+			<br />
+			<b>“A number” é plural.</b>
+			<br />
+			A number are here to see the president.
+			<br />
+			<br />
+			<b>“One of the” será seguido de uma palavra no plural, mas de um verbo no singular:</b>
+			<br />	
+			One of the reasons we do this is that it rains a lot in spring.
+			<br />
+			<br />
+			<b>Nomes de empresas e outras organizações ficam no singular.</b>
+			<br />
+			General Motors has announced its fall lineup of new vehicles.
+			<br />
+			<br />
+			<b>No entanto, é permitido o plural quando se pensa na empresa como um grupo de indivíduos – salvo em escrita muito formal.</b>
+			<br />
+			Ford has announced its breakup with Firestone Tires. Their cars will no longer use tires built by Firestone.
+			<br />
+			<br />
+			<b>Times de esporte são tratados como plural.</b>
+			<br />
+			The Yankees are a great organization.
+			<br />
+			<br />
+			<b>Times de esporte só ficaram no singular quando nos referimos a um time da cidade local (apenas no inglês americano)</b>
+			<br />
+			Dallas has attempted to secure the services of two assistant coaches that Green Bay hopes to keep.
+			<br />
+			<br />
+			<b>Usamos o apostrofe apenas quando queremos pluralizar letras OU criar o plural de uma palavra que se refira a ela mesma.</b>
+			<br />
+			Jeffrey got four A’s on his last report card.
+			<br />
+			You have fifteen and’s in the last paragraph.
+			<br />
+			<br />
+			<b>Não usaremos apostrofe nos seguintes casos:</b>
+			<br />
+			The 1890s in Europe are widely regarded as years of social decadence.
+			<br />
+			Rosa and her brother have identical IQs and they both have PhDs from Harvard.
+			<br />
+			<br />
+			<b>Há casos em que um sujeito no singular é ligado a um predicado no plural.</b>
+			<br />
+			My favorite breakfast is cereal with fruit, milk, Orange juice, and toast.
+			<br />
+			<br />
+			<b>Também um sujeito plural pode estar ligado a um predicado singular:</b>
+			<br />
+			Mistakes in parallelism are the only problem here.
+			<br />
+			<br />
+			<b>Quando o sujeito e o predicado não concordam:</b>
+			<br />
+			Many sons dislike their father.
+			<br />
+			Nesse tipo de oração, usa-se their para evitar ter que escolher entre his ou her; e father ficará no singular para não sugerir que os filhos têm mais de um pai.
+			<br />
+			<br />
+			]]>
+		</item>
+		<item>
+			<![CDATA[
+			As duas palavras podem significar qual? quais? ou o que? <b>Which</b> é utilizado quando temos um número limitado de escolhas. Quando há inúmeras possibilidades de resposta, usamos what. Essa seria a regra geral, mas em vários casos ambos são aceitos.
+			<br />
+			<br />
+			<u>Which party would you prefer to go - Steve\'s or Jennifer\'s?</u> (Devo opinar entre apenas duas festas)
+			<br />
+			<br />
+			<u>What is your opinion on this subject?</u> (Há inumeras possibilidades de respostas à essa pergunta)
+			<br />
+			<br />
+			<u>What/which is your favorite Simpsons\' episode?</u>
+			]]>
+		</item>
+		<item>
+			<![CDATA[
+			<i>A brilliant student</i>
+			<br />
+			<br />
+			<b>Professor</b> é usado para os professores da faculdade. Nos outros níveis de ensino a palavra é <b>teacher</b>.
+			<br />
+			<br />
+			<u>Professor Richard Dawkins.</u>
+			<br />
+			<br />
+			<u>High school teachers complain about the bad work conditons they endure at public schools.</u>
+			<br />
+			<br />
+			Para designar o profissional capacitado para lecionar, opte por <b>teacher</b>. Diferentemente de teacher, no entanto, <b>professor</b> pode ser pronome de tratamento, sendo acompanhado pelo nome completo, pelo sobrenome ou usado isoladamente, como podemos observar no primeiro exemplo.
+			<br />
+			<br />
+			<b>Pupil</b> é usado na educação infantil - mesmo aí, <b>student</b> também ocorre.
+			<br />
+			<br />
+			<u>A first-year pupil.</u>
+			<br />
+			<br />
+			<u>He was a student at Lincoln High School.</u>
+			]]>
+		</item>
+		<item>
+			<![CDATA[
+			<b>Jogging</b> é um exercício físico que pode ser praticado por qualquer um, seria uma caminhada em ritmo agradável.
+			<br />
+			<br />
+			<b>Running</b> exige mais esforço físico e é traduzido como correr.
+			]]>
+		</item>
+		<item>
+			<![CDATA[
+			O dicionário Cambridge coloca as três palavras como sinônimas. Já o Oxford Escolar (2003) traz a seguinte nota:
+			<br />
+			<br />
+			Utilizamos glad e pleased para nos referirmos a circunstâncias ou fatos concretos:
+			<br />
+			<br />
+			<u>Are you glad / pleased about getting a job?</u>
+			<br />
+			<br />
+			Happy descreve um estado mental e pode preceder o substantivo que o acompanha:
+			<br />
+			<br />
+			<u>Are you happy in your new job?</u>
+			<br />
+			<br />
+			<u>A happy occasion.</u>
+			<br />
+			<br />
+			<u>Happy memories./u>
+			]]>
+		</item>
+		<item>
+			<![CDATA[
+			<b>Think of</b> acompanha um pensamento que acabou de surgir ou que seja/tenho sido passageiro.
+			<br />
+			<br />
+			<b>Think about</b> acompanha um pensamento que, mesmo por pouco tempo, foi analisado e ponderado.
+			<br />
+			<br />
+			<u>When he told me he needed someone for the job, I thought of you immediately. I thought of you yesterday.</u>
+			<br />
+			<br />
+			<u>I was thinking about buying a new car.</u>
+			<br />
+			<u>Think about it before you make a decision!</u>
+			]]>
+		</item>
+		<item>
+			<![CDATA[
+			<b>Good</b> é um adjetivo:
+			<br />
+			<br />
+			<u>A good book.</u>
+			<br />
+			<br />
+			<u>Fine</u> pode ser:
+			<br />
+			<br />
+			1. adjetivo (quase o mesmo significado de good, usado após um verbo):
+			<br />
+			<br />
+			<u>Are you all right? I\'m fine, thanks.</u>
+			<br />
+			<br />
+			2. advérbio (significando \"de forma satisfatória\"):
+			<br />
+			<br />
+			<u>This dress suits you fine.</u>
+			<br />
+			<br />
+			<b>Well</b> pode ser:
+			<br />
+			<br />
+			1. advérbio:
+			<br />
+			<br />
+			<u>She did her homework very well.</u>
+			<br />
+			<br />
+			2. adjetivo (significando \"bem de saúde\"):
+			<br />
+			<br />
+			<u>You don\'t look so well.</u>
+			<br />
+			<br />
+			<u>I feel good = I fell fine.<u>
+			<u>I feel well = I\'m not sick.<u>
+			]]>
+		</item>
+		<item>
+			<![CDATA[
+			<b>Very</b> é um advérbio de intensidade que quer dizer muito.
+			<br />
+			<br />
+			<u>I\'m very sorry.</u>
+			<br />
+			<br />
+			<bToo</b> também que dizer muito e indica excesso ou extremo.
+			<br />
+			<br />
+			<u>It\'s too cold outside. (Está muito frio/ frio demais lá fora)</u>
+			<br />
+			<br />
+			<u>You\'re too cool. (Você é muito legal/ legal demais).</u>
+			<br />
+			<br />
+			<b>So</b> significa tão.
+			<br />
+			<br />
+			<u>Don\'t be so silly. (Não seja tão tolo)</u>
+			<br />
+			<br />
+			<b>So</b> também pode ter o mesmo sentido de very: nesse caso, costuma vir acompanhado de uma sentença subordinada (pelo menos na linguagem escrita):
+			<br />
+			<br />
+			<u>I\'m so tired that I could sleep on this chair.</u>
+			]]>
+		</item>
+		<item>
+			<![CDATA[
+			<b>House</b> = casa, espaço físico
+			<br />
+			<b>Home</b> = lar, lugar onde moramos
+			<br />
+			<br />
+			<u>You fix up, or clean, the house. You live in a house. You buy a house.</u>
+			<br />
+			<br />
+			<u>You go home. You can call me at home.</u>
+			<br />
+			<br />
+			Corretores em países de língua inglesa são instruídos a usar o termo <u>house</u> quando vão comprar um imóvel de alguém, e o termo <u>home</u> quando vão vender, justamente por causa do sentido afetivo e não apenas físico da palavra <u>home</u>.
+			]]>
+		</item>
+		<item>
+			<![CDATA[
+			<i>There was a blonde driving down the road one day. She glanced to her right and noticed another blonde sitting in a nearby field, rowing a boat with no water in sight.</i>
+			<br />
+			<br />
+			<i>The blonde angrily pulled her car over and yelled at the rowing blonde: \"What do you think you\'re doing? It\'s things like this that give us blondes a bad name. If I could swim, I\d come out there and kick your butt!\"</i>
+			<br />
+			<br />
+			<b>Near</b> e <b>close</b> são sinônimos para \"próximo, perto\". No entanto, <b>close</b> é acompanhado de <b>to</b>:
+			<br />
+			<br />
+			<u>The hotel is near the airport.</u>
+			<br />
+			<u>Don\'t stand close to the dog, Rosie!</u>
+			<br />
+			<br />
+			<b>Close</b> vai além e também é usado para proximidade entre pessoas, significado que near não carrega:
+			<br />
+			<br />
+			<u>He is devasted by the death of his sister. They were very close.</u>
+			<br />
+			<br />
+			E ainda: antes de substantivo se utiliza a palavra nearby ao invés de near:
+			<br />
+			<br />
+			A nearby village.
+			]]>
+		</item>
+		<item>
+			<![CDATA[
+			<b>Bathroom</b> = residências, locais privados
+			<b>Restroom</b> = locais de uso comum, como restaurantes, escolas, etc.
+			]]>
+		</item>
+		<item>
+			<![CDATA[
+			<i>Doesn\'t he look like the suspect?</i>
+			<br />
+			<br />
+			<b>As & like</b> = como
+			<br />
+			<br />
+			<b>Like</b>: usamos quando fazemos comparações, damos exemplos.
+			<br />
+			<br />
+			<u>How does it feel to be on your own, a complete unkown, like a rolling stone...</u>
+			<br />
+			<br />
+			<b>As</b>: expressa uma forma de fazer alguma coisa.
+			<br />
+			<br />
+			<u>He works as a police officer.</u>
+			<br />
+			<br />
+			<b>Atenção:</b>
+			<br />
+			<u>I work like a horse x I work as a horse</u>
+			<br />
+			No primeiro, eu trabalho como um cavalo trabalharia. Na segunda, eu sou um cavalo.
+			<br />
+			<br />
+			<u>You are talking like my wife x You are talking as my wife</u>
+			<br />
+			Na primeira, você está soando como minha esposa diria. Na segunda, você fala comigo como se fosse a minha esposa.
+			]]>
+		</item>
+	</string-array>
+
+	<integer-array name="articles_images">
+		<item>@drawable/article_01</item>
+		<item>@drawable/article_02</item>
+		<item>@drawable/article_03</item>
+		<item>@drawable/article_04</item>
+		<item>@drawable/article_05</item>
+		<item>@drawable/article_06</item>
+		<item>@drawable/article_07</item>
+		<item>@drawable/article_08</item>
+		<item>@drawable/article_09</item>
+		<item>@drawable/article_10</item>
+		<item>@drawable/article_11</item>
+		<item>@drawable/article_12</item>
+	</integer-array>
+
+	<string-array name="questions">
+		<item>
+			<![CDATA[
+			Complete com a palavra correta:
+			<br />
+			<br />
+			_________ spend more than men
+			<br />
+			<br />
+			a. Woman
+			<br />
+			b. Women
+			<br />
+			c. Womans
+			]]>
+		</item>
+		<item>
+			<![CDATA[
+			Complete com a palavra correta:
+			<br />
+			<br />
+			_________ color do you like? Red OR Black?
+			<br />
+			<br />
+			a. What
+			<br />
+			b. Which
+			]]>
+		</item>
+		<item>
+			<![CDATA[
+			Complete com a palavra correta:
+			<br />
+			<br />
+			_________ Parker, can I turn in my assignment next Monday? 
+			<br />
+			<br />
+			a. Professor
+			<br />
+			b. Teacher
+			]]>
+		</item>
+		<item>
+			<![CDATA[
+			Complete com a palavra correta:
+			<br />
+			<br />
+			The athlete trains every day, he needs to _________ 30 kilometers a day
+			<br />
+			<br />
+			a. Jog
+			<br />
+			b. Run
+			]]>
+		</item>
+		<item>
+			<![CDATA[
+			Complete com a palavra correta:
+			<br />
+			<br />
+			I am _________ about that
+			<br />
+			<br />
+			a. Glad
+			<br />
+			b. Happy
+			<br />
+			c. Pleased
+			]]>
+		</item>
+		<item>
+			<![CDATA[
+			Complete com a palavra correta:
+			<br />
+			<br />
+			I\'ve been _________ my boyfriend lately.
+			<br />
+			<br />
+			a. Thinking of
+			<br />
+			b. Thinking about
+			]]>
+		</item>
+		<item>
+			<![CDATA[
+			Complete com a palavra correta:
+			<br />
+			<br />
+			He has a _________ health
+			<br />
+			<br />
+			a. Fine
+			<br />
+			b. Good
+			<br />
+			c. Well
+			]]>
+		</item>
+		<item>
+			<![CDATA[
+			Complete com a palavra correta:
+			<br />
+			<br />
+			I don´t like it _________ much
+			<br />
+			<br />
+			a. So
+			<br />
+			b. Too
+			<br />
+			c. Very
+			]]>
+		</item>
+		<item>
+			<![CDATA[
+			Complete com a palavra correta:
+			<br />
+			<br />
+			I want to go to your _________
+			<br />
+			<br />
+			a. Home
+			<br />
+			b. House
+			]]>
+		</item>
+		<item>
+			<![CDATA[
+			Complete com a palavra correta:
+			<br />
+			<br />
+			She was sitting _________ the door
+			<br />
+			<br />
+			a. Near
+			<br />
+			b. Next
+			<br />
+			c. Close
+			]]>
+		</item>
+		<item>
+			<![CDATA[
+			Complete com a palavra correta:
+			<br />
+			<br />
+			My dad was in a restaurant, when he asked to use the _________
+			<br />
+			<br />
+			a. Bathroom
+			<br />
+			b. Restroom
+			]]>
+		</item>
+		<item>
+			<![CDATA[
+			She works _________ a nurse
+			<br />
+			<br />
+			a. Like
+			<br />
+			b. How
+			<br />
+			c. As
+			]]>
+		</item>
+	</string-array>
+
+	<string-array name="answers">
+		<item>Women</item>
+		<item>Which</item>
+		<item>Professor</item>
+		<item>Run</item>
+		<item>Glad</item>
+		<item>Thinking about</item>
+		<item>Good</item>
+		<item>Very</item>
+		<item>House</item>
+		<item>Near</item>
+		<item>Restroom</item>
+		<item>As</item>
+	</string-array>
+</resources>

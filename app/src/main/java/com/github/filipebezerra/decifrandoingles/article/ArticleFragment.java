@@ -1,0 +1,87 @@
+package com.github.filipebezerra.decifrandoingles.article;
+import android.os.*;
+import android.support.v4.app.*;
+import android.view.*;
+import com.github.filipebezerra.decifrandoingles.*;
+import android.widget.*;
+import android.text.*;
+import android.view.View.*;
+import android.support.v7.app.*;
+import com.github.filipebezerra.decifrandoingles.learning.*;
+
+public class ArticleFragment extends Fragment {
+
+	private Button mLearntButton;
+	
+	private TextView mArticleTitleView;
+
+	private TextView mArticleContentView;
+
+	private Article mArticle;
+	
+	private RequestExerciseAction mRequestExerciseAction;
+	
+	public ArticleFragment() {};
+	
+	public static ArticleFragment newInstance() {
+		ArticleFragment fragment = new ArticleFragment();
+
+		return fragment;
+	}
+
+	@Override
+	public void onActivityCreated(Bundle savedInstanceState) {
+		super.onActivityCreated(savedInstanceState);
+		loadExtrasFromActivity();
+		bindDataToViews();
+		
+		try {
+			mRequestExerciseAction = (ArticleFragment.RequestExerciseAction) getActivity();
+		} catch (ClassCastException e){}
+	}
+
+	private void loadExtrasFromActivity() {
+		final Bundle extras = getActivity().getIntent().getExtras();
+		final String keyword = extras.getString(ArticleActivity.EXTRA_ARTICLE_KEYWORD);
+		 mArticle = ArticleRepository.findByKeyword(keyword);
+	}
+
+	@Override
+	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+		final View fragmentView = inflater.inflate(
+			R.layout.fragment_article, container, false);
+		loadViews(fragmentView);
+		return fragmentView;
+	}
+
+	private void loadViews(View fragmentView) {
+		mArticleTitleView = (TextView)fragmentView.findViewById(R.id.title);
+		mArticleContentView = (TextView)fragmentView.findViewById(R.id.content);
+		mLearntButton = (Button)fragmentView.findViewById(R.id.buttonLearnt);
+		setupButtonAction();
+	}
+
+	private void setupButtonAction() {
+		mLearntButton.setOnClickListener(new OnClickListener(){
+				@Override
+				public void onClick(View view) {
+					if (mRequestExerciseAction != null)
+						mRequestExerciseAction.onRequestExercise();
+				}
+		});
+	}
+
+	private void bindDataToViews() {
+		mArticleTitleView.setText(mArticle.getTitle());
+		mArticleContentView.setText(Html.fromHtml(mArticle.getContent()));
+		
+		if (mArticle.isLearnt()) {
+			mLearntButton.setText("Quero exercitar mais");
+		}
+	}
+	
+	interface RequestExerciseAction {
+		void onRequestExercise();
+	}
+	
+}
