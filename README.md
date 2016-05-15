@@ -1,7 +1,7 @@
 # Decifrando o Inglês
 App Android educativo voltado para aprendizado da língua inglesa. 
 
-Este app é projeto final do evento [Android Study Jam Goiânia](https://plus.google.com/communities/102091391677384960565).
+Este app é projeto final do evento [Android Study Jam Goiânia](https://plus.google.com/communities/102091391677384960565) 2016.
 
 ## Para quem é este app
 
