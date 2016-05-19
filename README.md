@@ -29,7 +29,7 @@ Pré-requisitos
 - Android SDK 23
 - Android Build Tools v23.0.3
 - Android Support Repository
-- 
+
 Começando
 ---------
 
