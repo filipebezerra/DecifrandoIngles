@@ -1,5 +1,6 @@
 package com.github.filipebezerra.decifrandoingles.article;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.TextInputLayout;
@@ -101,50 +102,49 @@ public class ExerciseFragment extends Fragment {
 
         if (TextUtils.isEmpty(answer)) {
             mAnswerPlaceholderView.setErrorEnabled(true);
-            mAnswerPlaceholderView.setError("Ainda não sabemos sua resposta");
-            return;
-        }
+            mAnswerPlaceholderView.setError(getString(R.string.answer_is_required));
 
-        if (!answer.equalsIgnoreCase(mArticle.getExercise().getAnswer())) {
+        } else if (!answer.equalsIgnoreCase(mArticle.getExercise().getAnswer())) {
+                new MaterialDialog.Builder(getActivity())
+                        .title(R.string.title_wrong_answer)
+                        .content(R.string.content_wrong_answer)
+                        .positiveText(R.string.try_again)
+                        .negativeText(R.string.review_content)
+                        .onPositive(new MaterialDialog.SingleButtonCallback() {
+                            @Override
+                            public void onClick(@NonNull MaterialDialog d,
+                                    @NonNull DialogAction a) {
+                                mAnswerView.setText("");
+                                mAnswerView.requestFocus();
+                            }
+                        })
+                        .onNegative(new MaterialDialog.SingleButtonCallback() {
+                            @Override
+                            public void onClick(@NonNull MaterialDialog d,
+                                    @NonNull DialogAction a) {
+                                if (mRequestRevisionAction != null) {
+                                    mRequestRevisionAction.onRequestRevision();
+                                }
+                            }
+                        })
+                        .show();
+        } else {
+            ArticleRepository.saveAsLearnt(getActivity(), mArticle);
+
             new MaterialDialog.Builder(getActivity())
-                    .title("Resposta incorreta")
-                    .content("Infelizmente sua resposta não está certa.")
-                    .positiveText("Tente novamente")
-                    .negativeText("Revisar conteúdo")
+                    .title(R.string.title_lesson_learnt)
+                    .content(getString(R.string.content_lesson_learnt, mArticle.getTitle()))
+                    .positiveText(R.string.learn_more)
                     .onPositive(new MaterialDialog.SingleButtonCallback() {
                         @Override
                         public void onClick(@NonNull MaterialDialog d, @NonNull DialogAction a) {
-                            mAnswerView.setText("");
-                            mAnswerView.requestFocus();
-                        }
-                    })
-                    .onNegative(new MaterialDialog.SingleButtonCallback() {
-                        @Override
-                        public void onClick(@NonNull MaterialDialog d, @NonNull DialogAction a) {
-                            if (mRequestRevisionAction != null) {
-                                mRequestRevisionAction.onRequestRevision();
-                            }
+                            getActivity().setResult(Activity.RESULT_OK,
+                                    getActivity().getIntent());
+                            getActivity().finish();
                         }
                     })
                     .show();
-            return;
         }
-
-        ArticleRepository.saveAsLearnt(getActivity(), mArticle);
-
-        new MaterialDialog.Builder(getActivity())
-                .title("Lição aprendida")
-                .content("Parabéns você aprendeu a lição " + mArticle.getTitle())
-                .positiveText("Quero aprender mais")
-                .onPositive(new MaterialDialog.SingleButtonCallback() {
-                    @Override
-                    public void onClick(@NonNull MaterialDialog d, @NonNull DialogAction a) {
-                        getActivity().setResult(android.app.Activity.RESULT_OK,
-                                getActivity().getIntent());
-                        getActivity().finish();
-                    }
-                })
-                .show();
     }
 
     interface RequestRevisionAction {
