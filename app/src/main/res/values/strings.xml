@@ -10,7 +10,7 @@
     <string name="button_lets_get_exercise">Aprendi. Quero exercitar</string>
     <string name="hint_write_your_answer_here">Sua resposta aqui</string>
     <string name="button_submit_answer">OK. Responder</string>
-    <string name="text_lesson_already_learnt">"Aprendido à %1$s</string>
+    <string name="text_lesson_already_learnt">Aprendido %1$s</string>
     <string name="button_lets_exercise_more">Quero exercitar mais</string>
 
 </resources>
