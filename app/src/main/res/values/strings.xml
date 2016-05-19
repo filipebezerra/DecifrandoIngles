@@ -12,5 +12,13 @@
     <string name="button_submit_answer">OK. Responder</string>
     <string name="text_lesson_already_learnt">Aprendido %1$s</string>
     <string name="button_lets_exercise_more">Quero exercitar mais</string>
+    <string name="answer_is_required">Ainda não sabemos sua resposta</string>
+    <string name="title_wrong_answer">Resposta incorreta</string>
+    <string name="content_wrong_answer">Infelizmente sua resposta não está certa.</string>
+    <string name="try_again">Tente novamente</string>
+    <string name="review_content">Revisar conteúdo</string>
+    <string name="title_lesson_learnt">Lição aprendida</string>
+    <string name="content_lesson_learnt">Parabéns você aprendeu a lição %s</string>
+    <string name="learn_more">Quero aprender mais</string>
 
 </resources>
