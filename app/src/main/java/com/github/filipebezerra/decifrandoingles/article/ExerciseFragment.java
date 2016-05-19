@@ -102,49 +102,48 @@ public class ExerciseFragment extends Fragment {
         if (TextUtils.isEmpty(answer)) {
             mAnswerPlaceholderView.setErrorEnabled(true);
             mAnswerPlaceholderView.setError("Ainda não sabemos sua resposta");
-            return;
-        }
 
-        if (!answer.equalsIgnoreCase(mArticle.getExercise().getAnswer())) {
+        } else if (!answer.equalsIgnoreCase(mArticle.getExercise().getAnswer())) {
+                new MaterialDialog.Builder(getActivity())
+                        .title("Resposta incorreta")
+                        .content("Infelizmente sua resposta não está certa.")
+                        .positiveText("Tente novamente")
+                        .negativeText("Revisar conteúdo")
+                        .onPositive(new MaterialDialog.SingleButtonCallback() {
+                            @Override
+                            public void onClick(@NonNull MaterialDialog d,
+                                    @NonNull DialogAction a) {
+                                mAnswerView.setText("");
+                                mAnswerView.requestFocus();
+                            }
+                        })
+                        .onNegative(new MaterialDialog.SingleButtonCallback() {
+                            @Override
+                            public void onClick(@NonNull MaterialDialog d,
+                                    @NonNull DialogAction a) {
+                                if (mRequestRevisionAction != null) {
+                                    mRequestRevisionAction.onRequestRevision();
+                                }
+                            }
+                        })
+                        .show();
+        } else {
+            ArticleRepository.saveAsLearnt(getActivity(), mArticle);
+
             new MaterialDialog.Builder(getActivity())
-                    .title("Resposta incorreta")
-                    .content("Infelizmente sua resposta não está certa.")
-                    .positiveText("Tente novamente")
-                    .negativeText("Revisar conteúdo")
+                    .title("Lição aprendida")
+                    .content("Parabéns você aprendeu a lição " + mArticle.getTitle())
+                    .positiveText("Quero aprender mais")
                     .onPositive(new MaterialDialog.SingleButtonCallback() {
                         @Override
                         public void onClick(@NonNull MaterialDialog d, @NonNull DialogAction a) {
-                            mAnswerView.setText("");
-                            mAnswerView.requestFocus();
-                        }
-                    })
-                    .onNegative(new MaterialDialog.SingleButtonCallback() {
-                        @Override
-                        public void onClick(@NonNull MaterialDialog d, @NonNull DialogAction a) {
-                            if (mRequestRevisionAction != null) {
-                                mRequestRevisionAction.onRequestRevision();
-                            }
+                            getActivity().setResult(android.app.Activity.RESULT_OK,
+                                    getActivity().getIntent());
+                            getActivity().finish();
                         }
                     })
                     .show();
-            return;
         }
-
-        ArticleRepository.saveAsLearnt(getActivity(), mArticle);
-
-        new MaterialDialog.Builder(getActivity())
-                .title("Lição aprendida")
-                .content("Parabéns você aprendeu a lição " + mArticle.getTitle())
-                .positiveText("Quero aprender mais")
-                .onPositive(new MaterialDialog.SingleButtonCallback() {
-                    @Override
-                    public void onClick(@NonNull MaterialDialog d, @NonNull DialogAction a) {
-                        getActivity().setResult(android.app.Activity.RESULT_OK,
-                                getActivity().getIntent());
-                        getActivity().finish();
-                    }
-                })
-                .show();
     }
 
     interface RequestRevisionAction {
